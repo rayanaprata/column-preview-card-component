@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  --transparent-white: hsla(0, 0%, 100%, 0.75); /* (paragraphs) */
+  --very-light-gray: hsl(0, 0%, 95%); /* (background, headings, buttons) */
+
+  --lexend-deca: "Lexend Deca";
+  --big-shoulder: "Big Shoulders Display";
+}
+
+body {
+  background-color: var(--very-light-gray);
+}
+
+.cards {
+  margin: 10%;
+}
+
+.card__content {
+  color: white;
+  padding: 40px;
+}
+
+.card__title {
+  font-family: var(--big-shoulder);
+  text-transform: uppercase;
+  margin: 25px 0 25px 0;
+}
+
+.card__description {
+  font-family: var(--lexend-deca);
+  color: var(--transparent-white);
+  font-weight: 100;
+}
+
+button {
+  padding: 15px 35px;
+  border-radius: 50px;
+  background-color: var(--very-light-gray);
+  border: none;
+  margin-top: 25px;
+  font-family: var(--lexend-deca);
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 5px 2px 10px 0px rgba(0, 0, 0, 0.08);
+}
+
+.first-card button {
+  color: var(--bright-orange);
+}
+
+.second-card button {
+  color: var(--dark-cyan);
+}
+
+.third-card button {
+  color: var(--very-dark-cyan);
+}
+
+.first-card {
+  border-radius: 8px 8px 0 0;
+  background-color: var(--bright-orange);
+}
+
+.second-card {
+  background-color: var(--dark-cyan);
+}
+
+.third-card {
+  border-radius: 0 0 8px 8px;
+  background-color: var(--very-dark-cyan);
+}
+
+.attribution {
+  font-family: var(--lexend-deca);
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(266, 85%, 75%);
+}
+
+/* tablet  */
+@media screen and (min-width: 768px) {
+  .card__content {
+    color: white;
+    padding: 60px 70px;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) {
+  .cards {
+    display: flex;
+  }
+
+  .card__content {
+    color: white;
+    padding: 50px;
+  }
+
+  .first-card {
+    border-radius: 8px 0 0 8px;
+    background-color: var(--bright-orange);
+  }
+
+  .second-card {
+    background-color: var(--dark-cyan);
+  }
+
+  .third-card {
+    border-radius: 0 8px 8px 0;
+    background-color: var(--very-dark-cyan);
+  }
+
+  .card__description {
+    height: 170px;
+    background-color: rgb(245, 186, 186);
+  }
+
+  button {
+    padding: 15px 20px;
+  }
+}
