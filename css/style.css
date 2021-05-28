@@ -92,6 +92,10 @@ button:hover {
   color: hsl(266, 85%, 75%);
 }
 
+.attribution a:hover {
+  color: hsl(266, 82%, 62%);
+}
+
 /* tablet  */
 @media screen and (min-width: 768px) {
   .card__content {
@@ -127,7 +131,6 @@ button:hover {
 
   .card__description {
     height: 170px;
-    background-color: rgb(245, 186, 186);
   }
 
   button {
